@@ -1,8 +1,16 @@
 // import 'package:flutter/material.dart';
+import 'myclass.dart';
 
 void main() {
-  String r = myFunc();
-  print("Hello, world! $r");
+  var myFirstObject = MyClass()
+    ..firstName = "Serhii"
+    ..surName = "Yuzhytsa";
+  print("${myFirstObject.firstName} ${myFirstObject.surName}");
+
+  int zzz;
+  zzz = 7;
+
+  print(zzz);
 }
 
 String myFunc() {
